@@ -1,0 +1,38 @@
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px
+);
+
+$light-grey: #ededed;
+$grey: #ababab;
+$white: #fff;
+$success: #46ab74;
+$danger: #f00;
+
+input:focus, select:focus, .swal-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.swal-button {
+  background-color: $grey;
+  width: 30%;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: $grey;
+  opacity: 0.8;
+}
+
+.swal-button-container {
+  text-align: center;
+  width: 100%;
+}
+
+.swal-text {
+  text-align: center;
+}
+
+@import 'node_modules/sass-mq/mq';
